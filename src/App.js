@@ -9,7 +9,13 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <pre><code class="html">...</code></pre>
+        <pre><code class="html">
+          document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+              hljs.highlightBlock(block);
+            });
+});</code>
+</pre>
       </header>
     </div>
   );
